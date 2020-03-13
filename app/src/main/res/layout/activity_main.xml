@@ -1,12 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#E0E0E0"
     android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.londonappbrewery.iampoor.MainActivity">
 
+    <TextView
+        android:id="@+id/text_I_am"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/title"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="50sp"
+        tools:text="@string/title" />
+
+    <TextView
+        android:id="@+id/text_poor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="190dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/titleComponent2"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/image_coal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/imageContent"
+        app:srcCompat="@drawable/coal" />
 </RelativeLayout>
